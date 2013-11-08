@@ -4,7 +4,6 @@ import subprocess
 from time import sleep
 import pifacecad
 
-SHUTDOWN_HOLD = 0
 UPDATE_INTERVAL = 10  # 10 sec
 GET_IP_CMD = "hostname --all-ip-addresses"
 GET_TEMP_CMD = "/opt/vc/bin/vcgencmd measure_temp"
