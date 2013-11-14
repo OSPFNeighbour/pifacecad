@@ -5,7 +5,7 @@ from time import sleep
 import pifacecad
 
 UPDATE_INTERVAL = 10  # 10 sec
-GET_IP_CMD = "hostname --all-ip-addresses"
+GET_IP_CMD = "hostname --all-ip-addresses | awk '{print $1}'"
 GET_TEMP_CMD = "/opt/vc/bin/vcgencmd measure_temp"
 TOTAL_MEM_CMD = "free | grep 'Mem' | awk '{print $2}'"
 USED_MEM_CMD = "free | grep '\-\/+' | awk '{print $3}'"
